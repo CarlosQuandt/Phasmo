@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasmophobia Companion</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="openSite()">
+    <div><div id='Language'></div>
+        <div>
+            <input name="pt" type="image" src="./img/pt.png" onclick="ChangeLang('PT')">
+            <input name="en" type="image" src="./img/en.png" onclick="ChangeLang('EN')">
+        </div>
+    </div>
+    <div><button id='btDescription' type="button" onclick="descriptionFunction()">Mostrar Descrição</button></div>
+    <div>
+        <table>
+            <tbody>
+                <tr id='header'>
+                    <td><div><button id='btReset' type="button" onclick="resetFunction()">Resetar</button></div></td>
+                    <td><div id='EMFHeader'></div><input type="checkbox" id="EMF" name="EMF" value="Y" onclick="mainfunction('')"></td>
+                    <td><div id='SpiritBoxHeader'></div><input type="checkbox" id="SpiritBox" name="SpiritBox" value="Y" onclick="mainfunction('')"></td>
+                    <td><div id='FingerPrintsHeader'></div><input type="checkbox" id="FingerPrints" name="FingerPrints" value="Y" onclick="mainfunction('')"></td>
+                    <td><div id='GhostOrbHeader'></div><input type="checkbox" id="GhostOrb" name="GhostOrb" value="Y" onclick="mainfunction('')"></td>
+                    <td><div id='GhostWritingHeader'></div><input type="checkbox" id="GhostWriting" name="GhostWriting" value="Y" onclick="mainfunction('')"></td>
+                    <td><div id='FreezingTemperaturesHeader'></div><input type="checkbox" id="FreezingTemperatures" name="FreezingTemperatures" value="Y" onclick="mainfunction('')"></td>
+                    <td id='desc'><br></td>
+                    <td id='str'><br></td>
+                    <td id='weak'><br></td>
+                </tr>
+                <tr id='SpiritLine'>
+                    <td id='Spirit'></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td id='desc1'>Um Espírito é o fantasm mais comum que você vai encontrar, entretanto é ainda muito poderoso e perigoso. 
+                                        Eles são geralmente descobertos facilmente. Um dos seus motivos de aparição é depois de uma morte inexplicável.</td>
+                    <td id='str1'>Nenhum.</td>
+                    <td id='weak1'>Um espírito pode ser temporariamente parado ao acender um incenso natual.</td>
+                </tr>
+                <tr id='WraithLine'>
+                    <td id='Wraith'></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td id='desc2'>Um Wraith é um dos Fantasmas mais perigosos que você encontrará. Isto é, 
+                                        o único fantasma conhecido que tem a capacidade de voar e em alguns momentos até mesmo atravessar paredes.</td>
+                    <td id='str2'>Quase nunca toca o chão,  oque significa que não pode ser rastreado.</td>
+                    <td id='weak2'>Wraiths tem uma reação tóxica a sal.</td>
+                </tr>
+                <tr id='PhantomLine'>
+                    <td id='Phantom'></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td id='desc3'>Um Espectro é o Fantasma que pode possuir os vivos, muitas vezes sendo invocado por um Tabuleiro de Ouija. 
+                                        O Espectro também provoca medo naqueles ao seu arredor.</td>
+                    <td id='str3'>Olhar para um Espectro irá causar perda considerável de sanidade.</td>
+                    <td id='weak3'>Tirar uma foto de um Espectro fará com que ele desapareça temporarriamente.</td>
+                </tr>
+                <tr id='PoltergeistLine'>
+                    <td id='Poltergeist'></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td></td>
+                    <td></td>
+                    <td id='desc4'>Um dos mais famosos fantasmas é o Poltergeist, também conhecido como fantasma barulhento, 
+                                        podendo manipular objetos ao seu redor para espalhar o medo em suas vítimas.</td>
+                    <td id='str4'>um Poltergeist pode jogar grandes quantidades de objetos de uma vez.</td>
+                    <td id='weak4'>Um Poltergeist não tem força em uma sala vazia, sendo quase inofensivo.</td>
+                </tr>
+                <tr id='BansheeLine'>
+                    <td id='Banshee'></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td id='desc5'>Um Banshee é um caçador natural que atacará qualqauer coisa. 
+                                        Tem sido conhecido por persegur sua presa, uma de cada vez, até matá-las.</td>
+                    <td id='str5'>um Banshee segue apenas uma pessoa de cada vez.</td>
+                    <td id='weak5'>Usar um crucifixo, faz com que o Banshee troque de alvo.</td>
+                </tr>
+                <tr id='JinnLine'>
+                    <td id='Jinn'></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td></td>
+                    <td id='desc6'>Um Jinn é um fantasma territorial, que vai atacar quando ameaçado. 
+                                        Também é conhecido por ser capaz de viajar a uma velocidade significativa.</td>
+                    <td id='str6'>Um Jinn ficará mais rápido se a vítima estiver longe.</td>
+                    <td id='weak6'>Desligar a fonte de energia do local impedirá o Junn de usar sua habilidade</td>
+                </tr>
+                <tr id='MareLine'>
+                    <td id='Mare'></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td id='desc7'>Mare é a fonte de todos seus pesadelos, tornando-se mais poderoso à noite. 
+                                        Possuindo poder de controlar a mente das pessoas.</td>
+                    <td id='str7'>Uma mare faz seu alvo alucinar. Se você olhar para uma alucinação, a sua sanidade irá decair mais rápido.</td>
+                    <td id='weak7'>Usar uma lanterna para as alucinações.</td>
+                </tr>
+                <tr id='RevenantLine'>
+                    <td id='Revenant'></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td id='desc8'>Um Revenant é muito lento, porém violento e vai atacar indiscriminadamente sem exitar. 
+                                        Há rumores de que ao caçar, ele anda em uma velocidade significativa.</td>
+                    <td id='str8'>Um Revenant avançará a uma velocidade significativamente mais rápida ao caçar uma vítima.</td>
+                    <td id='weak8'>Esconder-se do Revenant fará com que ele se mova muito lentamente.</td>
+                </tr>
+                <tr id='ShadeLine'>
+                    <td id='Shade'></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td></td>
+                    <td id='desc9'>Uma Assombração é conhecida por ser um fantaasma Tímido. 
+                                        Há evidências de que uma sombra irá interromper toda atividade paranormal se houver várias pessoas próximas ao local.</td>
+                    <td id='str9'>Ser tímido significa que o fantasma será mais difícil de encontrar.</td>
+                    <td id='weak9'>O Fantasma não entrará no modo de caça se houver vrárias pessoas próximas.</td>
+                </tr>
+                <tr id='DemonLine'>
+                    <td id='Demon'></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td id='desc10'>Um Demônio é um dos piores Fantasmas que você pode encontrar. 
+                                         É conhecido por atacar sem nenhuma motivo.</td>
+                    <td id='str10'>Um Demônio vai atacar mais vezes do que qualquer outro fantasma.</td>
+                    <td id='weak10'>Fazer perguntas bem-sucedidas a um demôio no tabuleiro Ouija não diminui a sanidade dos usuários.</td>
+                </tr>
+                <tr id='YureiLine'>
+                    <td id='Yurei'></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td id='desc11'>A Yurei é um fantasma que voltou para o mundo físico, 
+                                         geralmente com a finalidade de vingança ou ódio.</td>
+                    <td id='str11'>Sabe-se que os Yurei causam um efeito mais forte na sanidade das pessoas.</td>
+                    <td id='weak11'>Acender um incenso no quarto onde o Yurei esteve presente, fará com que ele não perambule por lá durante um longo tempo.</td>
+                </tr>
+                <tr id='OniLine'>
+                    <td id='Oni'></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td></td>
+                    <td id='desc12'>Os Oni são primos do Demônio e possuen uma força extrema. 
+                                         Há rumores de que eles se tornam mais ativos em torno de suas presas.</td>
+                    <td id='str12'>Os Oni são mais ativos quand oas pessoas estão por perto e são vistos movendo objetos em grande velocidade.</td>
+                    <td id='weak12'>Ser mais ativo tornará os Oni mais fáceis de encontrar e identificar.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
