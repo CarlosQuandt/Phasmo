@@ -213,7 +213,7 @@ function ChangeLang(p_lang){
     document.getElementById("weak").innerHTML = 'Weaknesses';
 
     document.getElementById("desc1").innerHTML = 'A Spirit is the most common Ghost you will come across however it is still very powerful and dangerous. They are usually discovered at one of their hunting grounds after an unexplained death.';
-    document.getElementById("str1").innerHTML = 'None';
+    document.getElementById("str1").innerHTML = 'None.';
     document.getElementById("weak1").innerHTML = 'Using Smudge Sticks on a Spirit will stop it attacking for a long period of time.';
 
     document.getElementById("desc2").innerHTML = 'A Wraith is one of the most dangerous Ghosts you will find. It is also the only known ghost that has the ability of flight and has sometimes been known to travel through walls.';
