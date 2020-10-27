@@ -266,7 +266,7 @@ function ChangeLang(p_lang){
     document.getElementById("weak11").innerHTML = 'Using Smudge Sticks on the Yureis room will cause it to not wander around the location for a long time.';
     
 
-    document.getElementById("desc12").innerHTML = '';
+    document.getElementById("desc12").innerHTML = ' ';
     document.getElementById("str12").innerHTML = 'Oni are more active when people are nearby and have been seen moving objects at great speed.';
     document.getElementById("weak12").innerHTML = 'Being more active will make the Oni easier to find and identify.';
 
