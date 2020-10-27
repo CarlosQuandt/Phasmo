@@ -212,63 +212,63 @@ function ChangeLang(p_lang){
     document.getElementById("str").innerHTML = 'Unique Strengths';
     document.getElementById("weak").innerHTML = 'Weaknesses';
 
-    document.getElementById("desc1").innerHTML = '';
-    document.getElementById("str1").innerHTML = '';
-    document.getElementById("weak1").innerHTML = '';
+    document.getElementById("desc1").innerHTML = 'A Spirit is the most common Ghost you will come across however it is still very powerful and dangerous. They are usually discovered at one of their hunting grounds after an unexplained death.';
+    document.getElementById("str1").innerHTML = 'None';
+    document.getElementById("weak1").innerHTML = 'Using Smudge Sticks on a Spirit will stop it attacking for a long period of time.';
 
-    document.getElementById("desc2").innerHTML = '';
-    document.getElementById("str2").innerHTML = '';
-    document.getElementById("weak2").innerHTML = '';
+    document.getElementById("desc2").innerHTML = 'A Wraith is one of the most dangerous Ghosts you will find. It is also the only known ghost that has the ability of flight and has sometimes been known to travel through walls.';
+    document.getElementById("str2").innerHTML = 'Wraiths almost never touch the ground, meaning it cant be tracked by footsteps.';
+    document.getElementById("weak2").innerHTML = 'Wraiths have a toxic reaction to Salt.';
     
 
-    document.getElementById("desc3").innerHTML = '';
-    document.getElementById("str3").innerHTML = '';
-    document.getElementById("weak3").innerHTML = '';
+    document.getElementById("desc3").innerHTML = 'A Phantom is a Ghost that can possess the living, most commonly summoned by a Ouija Board. It also induces fear into those around it.';
+    document.getElementById("str3").innerHTML = 'Looking at a Phantom will considerably drop your Sanity.';
+    document.getElementById("weak3").innerHTML = 'Taking a photo of the Phantom will make it temporarily disappear.';
     
 
-    document.getElementById("desc4").innerHTML = '';
-    document.getElementById("str4").innerHTML = '';
-    document.getElementById("weak4").innerHTML = '';
+    document.getElementById("desc4").innerHTML = 'One of the most famous Ghosts, a Poltergeist, also known as a noisy ghost can manipulate objects around it to spread fear into its victims.';
+    document.getElementById("str4").innerHTML = 'A Poltergeist is capable of influencing more objects at once than any other Ghosts, and is capable of shutting multiple doors at once.';
+    document.getElementById("weak4").innerHTML = 'A Poltergeist is almost ineffective in an empty room.';
     
 
     document.getElementById("desc5").innerHTML = '';
-    document.getElementById("str5").innerHTML = '';
-    document.getElementById("weak5").innerHTML = '';
+    document.getElementById("str5").innerHTML = 'A Banshee will focus on one player at a time until it kills them.';
+    document.getElementById("weak5").innerHTML = 'Banshees fear the Crucifix, which boosts the Hunt-stopping range of one from 3 meters to 5 meters against it';
     
 
     document.getElementById("desc6").innerHTML = '';
-    document.getElementById("str6").innerHTML = '';
-    document.getElementById("weak6").innerHTML = '';
+    document.getElementById("str6").innerHTML = 'A Jinn will travel at a faster speed if its victim is far away.';
+    document.getElementById("weak6").innerHTML = 'Turning off the locations power source will prevent the Jinn from using its ability.';
     
 
     document.getElementById("desc7").innerHTML = '';
-    document.getElementById("str7").innerHTML = '';
-    document.getElementById("weak7").innerHTML = '';
+    document.getElementById("str7").innerHTML = 'Increased chance to attack in the dark. As such, will do what it can to achieve this, such as turning off lights and tripping the fuse box.';
+    document.getElementById("weak7").innerHTML = 'Turning the lights on will lower its chance to attack.';
     
 
     document.getElementById("desc8").innerHTML = '';
-    document.getElementById("str8").innerHTML = '';
-    document.getElementById("weak8").innerHTML = '';
+    document.getElementById("str8").innerHTML = 'A Revenant will travel at a significantly faster speed when hunting a victim. Additionally, the Revenant can freely switch whoever it is targeting during a Hunt.';
+    document.getElementById("weak8").innerHTML = 'Hiding from the Revenant will cause it to move very slowly.';
     
 
     document.getElementById("desc9").innerHTML = '';
-    document.getElementById("str9").innerHTML = '';
-    document.getElementById("weak9").innerHTML = '';
+    document.getElementById("str9").innerHTML = 'As a shy ghost, a Shade will rarely perform actions in the presence of two or more people, making it harder to detect.';
+    document.getElementById("weak9").innerHTML = 'Conversely, a Shade will rarely start a Hunt when players are grouped together.';
     
 
     document.getElementById("desc10").innerHTML = '';
-    document.getElementById("str10").innerHTML = '';
-    document.getElementById("weak10").innerHTML = '';
+    document.getElementById("str10").innerHTML = 'Demons will attack more often than any other ghost.';
+    document.getElementById("weak10").innerHTML = 'Asking a Demon successful questions on the Ouija Board wont lower the users sanity.';
     
 
     document.getElementById("desc11").innerHTML = '';
-    document.getElementById("str11").innerHTML = '';
-    document.getElementById("weak11").innerHTML = '';
+    document.getElementById("str11").innerHTML = 'Yurei have been known to have a stronger effect on peoples Sanity.';
+    document.getElementById("weak11").innerHTML = 'Using Smudge Sticks on the Yureis room will cause it to not wander around the location for a long time.';
     
 
     document.getElementById("desc12").innerHTML = '';
-    document.getElementById("str12").innerHTML = '';
-    document.getElementById("weak12").innerHTML = '';
+    document.getElementById("str12").innerHTML = 'Oni are more active when people are nearby and have been seen moving objects at great speed.';
+    document.getElementById("weak12").innerHTML = 'Being more active will make the Oni easier to find and identify.';
 
   }else if (p_lang==='PT'){
     document.getElementById("Language").innerHTML = 'Idioma';
